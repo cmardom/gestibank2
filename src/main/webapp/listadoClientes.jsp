@@ -58,7 +58,7 @@
 
         <td style="border-bottom: 1px dotted green">
             <div>
-                <form method="get" action="editaCliente.jsp" style="display: flex">
+                <form method="get" action="formularioEditaCliente.jsp" style="display: flex">
                     <input type="hidden" name="identificador" value="<%=listado.getInt("identificador")%>" />
                     <input type="hidden" name="nombre_completo" value="<%=listado.getString("nombre_completo")%>" />
                     <input type="hidden" name="direccion" value="<%=listado.getString("direccion")%>" />

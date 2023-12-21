@@ -45,6 +45,9 @@
         Objects.requireNonNull(request.getParameter("nombre_completo"));
         flagValidaNombre_notnull = true;
 
+        nombre_completo = request.getParameter("nombre_completo");
+
+
 
         /*DIRECCION = STRING*/
         if (request.getParameter("direccion").isBlank()) throw new Exception ("Parámetro vacío o espacios en blanco");
@@ -66,9 +69,9 @@
         /*FECHA NACIMIENTO = DATE*/
         Objects.requireNonNull(request.getParameter("fecha_nacimiento"));
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
         fechaFormateada = format.parse(request.getParameter("fecha_nacimiento"));
         flagValidaFecha_nacimiento = true;
-
         sqlDate = new java.sql.Date(fechaFormateada.getTime());
 
     } catch (Exception ex){

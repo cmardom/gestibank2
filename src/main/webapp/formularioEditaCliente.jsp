@@ -16,7 +16,7 @@
     String nombre_completo = request.getParameter("nombre_completo");
     String direccion = request.getParameter("direccion");
     String telefono = request.getParameter("telefono");
-    Date fecha_nacimiento = new Date(request.getParameter("fecha_nacimiento"));
+    String fecha_nacimiento = request.getParameter("fecha_nacimiento");
 %>
     <h1>Edita el cliente con el identificador <%=identificador%></h1>
     <form method="post" action="editaCliente.jsp" >
