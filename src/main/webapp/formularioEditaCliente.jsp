@@ -20,14 +20,15 @@
 %>
     <h1>Edita el cliente con el identificador <%=identificador%></h1>
     <form method="post" action="editaCliente.jsp" >
-        <input type="hidden" name="clienteID" value="<%=identificador%>"><br>
-        <input type="text" name="nombre" value="<%=nombre_completo%>"><br>
+        <input type="hidden" name="identificador" value="<%=identificador%>"><br>
+        <input type="text" name="nombre_completo" value="<%=nombre_completo%>"><br>
         <input type="text" name="direccion" value="<%=direccion%>"><br>
-        <input type="number" name="telefono" value="<%=telefono%>"><br>
+        <input type="text" name="telefono" value="<%=telefono%>"><br>
         <input type="date" name="fecha_nacimiento" value="<%=fecha_nacimiento%>"><br><br>
         <input type="submit" value="EDITAR" style="background-color: cornflowerblue; color: white">
     </form>
-    </form>
+<p style="text-align: center">__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___</p>
+
 
 </body>
 </html>

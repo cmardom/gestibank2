@@ -128,7 +128,7 @@
                 int filasAfectadas = ps.executeUpdate();
                 ResultSet rs = ps.getGeneratedKeys();
 
-                System.out.println("Entrenamiento grabado. Filas afectadas -> " + filasAfectadas);
+                System.out.println("Cliente grabado. Filas afectadas -> " + filasAfectadas);
 
                 ;} catch (Exception e){
                     e.printStackTrace();

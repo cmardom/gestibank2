@@ -26,7 +26,7 @@
 
 <h2>GESTIBANK</h2>
 <h3>Nuestros clientes</h3>
-<table style="width: 100%; padding-left: 20px">
+<table style="width: 100%; padding-left: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center">
     <tr style="background-color: antiquewhite">
         <th>Identificador</th>
         <th>Nombre completo</th>
@@ -40,7 +40,7 @@
 
     %>
     <tr text-align: center>
-        <td >
+        <td style="border: 1px solid green" >
             <%=listado.getInt("identificador")%>
         </td>
         <td style="border: 1px solid green">
@@ -64,7 +64,7 @@
                     <input type="hidden" name="direccion" value="<%=listado.getString("direccion")%>" />
                     <input type="hidden" name="telefono" value="<%=listado.getString("telefono")%>" />
                     <input type="hidden" name="fecha_nacimiento" value="<%=listado.getDate("fecha_nacimiento")%>" />
-                    <input class="btn-editar-cliente" type="submit" value="EDITAR" style="background-color: cornflowerblue; color: white">
+                    <input type="submit" value="EDITAR" style="background-color: cornflowerblue; color: white">
                 </form>
 
                 <form method="get" action="borrarCliente.jsp">
@@ -86,7 +86,7 @@
     %>
 </table>
 <br>
-<form method="post" action="grabaCliente.jsp" style="padding-left: 20px; border-top: 1px solid black">
+<form method="post" action="grabaCliente.jsp" style="padding-left: 25%">
     <input type="hidden" type="number" name="identificador" placeholder="identificador">
     <input type="text" name="nombre_completo" placeholder="nombre completo">
     <input type="text" name="direccion" placeholder="direccion">
@@ -107,9 +107,9 @@
 
 %>
 <br>
-<form method="post" action="buscaCliente.jsp" style="padding-left: 20px; border-top: 1px solid black">
+<form method="post" action="buscaCliente.jsp" style="padding-left: 25%">
     <input type="text" name="nombre_completo" placeholder="nombre completo">
-    <input class="btn-buscar-cliente" type="submit" value="BUSCAR" style="background-color: gainsboro; color: black">
+    <input type="submit" value="BUSCAR" style="background-color: gainsboro; color: black">
 </form>
 <p style="text-align: center">__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___</p>
 <%

@@ -27,7 +27,7 @@
 <%
     if (listado.next()) {
 %>
-<table style="padding-left: 20px">
+<table style="width: 100%; padding-left: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center">
     <tr>
         <th>Nombre</th>
     </tr>
@@ -43,7 +43,7 @@
                 <input type="hidden" name="direccion" value="<%=listado.getString("direccion") %>"/>
                 <input type="hidden" name="telefono" value="<%=listado.getString("telefono") %>"/>
                 <input type="hidden" name="fecha_nacimiento" value="<%=listado.getDate("fecha_nacimiento") %>"/>
-                <input class="btn-ver-detalles" type="submit" value="VER DETALLES" style="background-color: darkcyan; color: white">
+                <input type="submit" value="VER DETALLES" style="background-color: darkcyan; color: white">
             </form>
         </td>
     </tr>
@@ -60,5 +60,7 @@
     s.close();
     conexion.close();
 %>
+<p style="text-align: center">__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___</p>
+
 </body>
 </html>

@@ -100,11 +100,9 @@
 
             String query = "UPDATE cliente SET nombre_completo = ?, direccion = ?, telefono = ?, fecha_nacimiento = ? WHERE identificador = ?";
 
-            System.out.println("va a ejecutar query 1");
             ps = conn.prepareStatement(query, PreparedStatement.RETURN_GENERATED_KEYS);
 
             //ps = conn.prepareStatement(query);
-            System.out.println("va a ejecutar query 2");
 
             int idx = 1;
             ps.setString(idx++, nombre_completo);
