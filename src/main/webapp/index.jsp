@@ -5,9 +5,17 @@
         <title>JSP - Hello World</title>
     </head>
     <body>
-        <h1><%= "Gestibank" %> </h1>
-        <br/>
-        <p>Redirigiendo. Por favor, espere...</p>
+        <div style="margin: 0 auto">
+            <h1 style="font-weight: bold;">GESTIBANK</h1>
+            <br/>
+            <p>Bienvenido a Gestibank</p>
+            <br>
+            <a href="listadoClientes.jsp" style="padding: 10px; background-color: darkcyan; color: white">Ver listado de clientes</a>
+        </div>
+
+<%--
         <% response.sendRedirect("listadoClientes.jsp");%>
+--%>
     </body>
+
 </html>
